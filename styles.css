@@ -74,13 +74,16 @@ nav a:hover{
 }
 input{
     display: block;
-    margin: 1.2rem auto;
+    margin: 3rem auto;
     width: 100%;
-    padding: 1rem 8rem;
+    padding: 1rem 3rem;
+    overflow: hidden;
 }
-input[type="email"]::placeholder{
-    text-align: center;
+input[type="email"]{
+    text-align: left;
+    overflow: hidden;
 }
+
 input[type="submit"]{
     width: 70%;
     background-color: #3e484ab3;
@@ -170,18 +173,89 @@ footer{
     margin: 0 6px;
     color:rgba(5, 5, 18, 0.882) ;
 }
-@media  (max-width: 815px){
+
+@media  (max-width: 700px){
+    .mobile-container{
+        max-width: 100%;
+        margin: auto;
+        
+        height: 500px;
+        color: white;
+        border-radius: 10px;
+    }
+    .top-nav{
+        
+        background-color: rgb(118, 83, 83);
+        position: absolute;
+        top: 0.7rem;
+        right: 16px;
+        z-index: 2;
+            
+    }
+    .top-nav #nav-bar{
+        display: none;
+        background-color: #07080eb3;
+    }
+    .top-nav a{
+        color: white;
+        padding: 14px 15px;
+        text-decoration: none;
+        font-size: 12px;
+        display: block;
+    }
+    .top-nav a.icon{
+        background: rgb(0, 0, 0);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .top-nav a:hover{
+        color: grey;
+        
+    }
+     main{
+        padding: 1rem;
+       margin: 1rem;
+    }
+   
     .center-top{
-        font-size: 2rem;
+        font-size: 0.9rem;
+    }
+    .top-left{
+        position: absolute;
+        top: -12px;
+        left: 5px;
+        z-index: 2;
     }
     h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
-    nav a{
-        font-size: 1.4rem;
+    input{
+        
+            display: block;
+            margin: 1.2rem auto;
+            width: 300px;
+            padding: 0.7rem 0.9rem;
+        
+    }
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
     }
     .price{
         display: flex;
         flex-direction: column;
     }
+   .price-content h3{
+    font-size: 1.8rem;
+   }
+   .price-no{
+    font-size: 2.4rem;
+   }
+   .contact-icons{
+    font-size: 1rem;
+   }
 }

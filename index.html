@@ -7,17 +7,25 @@
         <meta name="description" content="Advance Guitar">
         <link rel="stylesheet" type="text/css" href="./styles.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <div class="mobile-container">
         <header id="header">
             <img src="./images/jeremy-allouche-YStboKiFPVw-unsplash.jpg" alt="" id="header-img" width="50rem">
             <h1 class="top-left">Advance Guitar</h1>
+            <div class="top-nav">
             <nav id="nav-bar" class="top-right">
                 <a href="#packages" class="nav-link">Packages</a>
                 <a href="#video" class="nav-link">About</a>
                 <a href="#price" class="nav-link">Price</a>
             </nav>
-        
+
+            <a href="javascript:void(0);" class="icon" onclick="myfunction()">
+                <i class="fa fa-bars">
+                </i>
+            </a>
+        </div>
 <div class="bk-overlay"></div>
 
 <div class="center-top">The Guitar is not just an instrument<br> It is an Extension of you</div>
@@ -26,6 +34,7 @@
                 <input type="submit" value="Get Started" id="submit">
             </form>
         </header>
+        </div>
         <main id="main-doc">
             <div class="info" id="packages">
                 <div class="icon">
@@ -108,5 +117,6 @@
             <a href=""><i class="fab fa-2x fa-linkedin"></i></a>
         </div>
         </footer>
+        <script src="index.js"></script>
     </body>
 </html>
