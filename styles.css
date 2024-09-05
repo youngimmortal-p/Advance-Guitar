@@ -174,7 +174,20 @@ footer{
     color:rgba(5, 5, 18, 0.882) ;
 }
 
-@media  (max-width: 800px){
+@media (max-width: 900px){
+    h1{
+        font-size: 3rem;
+    }
+    nav a{
+        font-size: 1.8rem;
+        margin: 10px 11px;
+    }
+    .center-top{
+        font-size: 2rem;
+    }
+}
+
+@media  (max-width: 600px){
     .mobile-container{
         max-width: 100%;
         margin: auto;
@@ -203,12 +216,13 @@ footer{
         display: block;
     }
     .top-nav a.icon{
-        background: #3036abb3;
+        
         display: block;
         position: absolute;
         right: 0;
         top: 0;
         z-index: 1;
+        font-size: 20px;
     }
     .top-nav a:hover{
         color: grey;
@@ -259,6 +273,7 @@ footer{
     font-size: 1rem;
    }
 }
+
 @media (max-width: 315px){
     h1{
         font-size: 1rem;
