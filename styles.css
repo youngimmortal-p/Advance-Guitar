@@ -90,8 +90,8 @@ input[type="submit"]{
     border: 1px solid #527e87b3;
 }
 main{
-    margin: 5rem;
-    padding: 3rem;
+    margin: 2rem;
+    padding: 1rem;
 }
 .info{
     display: flex;
@@ -174,12 +174,10 @@ footer{
     color:rgba(5, 5, 18, 0.882) ;
 }
 
-@media  (max-width: 700px){
+@media  (max-width: 800px){
     .mobile-container{
         max-width: 100%;
         margin: auto;
-        
-        height: 500px;
         color: white;
         border-radius: 10px;
     }
@@ -195,6 +193,7 @@ footer{
     .top-nav #nav-bar{
         display: none;
         background-color: #07080eb3;
+        z-index: 0;
     }
     .top-nav a{
         color: white;
@@ -204,11 +203,12 @@ footer{
         display: block;
     }
     .top-nav a.icon{
-        background: rgb(0, 0, 0);
+        background: #3036abb3;
         display: block;
         position: absolute;
         right: 0;
         top: 0;
+        z-index: 1;
     }
     .top-nav a:hover{
         color: grey;
@@ -236,7 +236,7 @@ footer{
             display: block;
             margin: 1.2rem auto;
             width: 300px;
-            padding: 0.7rem 0.9rem;
+           padding: 0.7rem 0.9rem;
         
     }
     h2{
@@ -258,4 +258,15 @@ footer{
    .contact-icons{
     font-size: 1rem;
    }
+}
+@media (max-width: 315px){
+    h1{
+        font-size: 1rem;
+    }
+    .top-left{
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        z-index: 2;
+    }
 }
